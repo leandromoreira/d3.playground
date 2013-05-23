@@ -11,6 +11,21 @@
 			d3.selectAll("p")
 				.data([2,4,6,8])
 				.style("font-size", function(d){ return d + "0px";});
+
+			d3.select("body").selectAll("p")
+			    .data([4, 8, 15, 16, 23, 42])
+			  	.enter()
+			  	.append("p")
+			    .text(function(d) { return "I’m number " + d + "!"; });
+
+			d3.select("body").transition()
+				.duration(2778)
+    			.style("background-color", "white");
+
+    		d3.selectAll("circle").transition()
+			    .duration(750)
+			    .delay(function(d, i) { return i * 10; })
+			    .attr("r", function(d) { return Math.sqrt(d * scale); });
 		}
 		</script>
 	</head>
