@@ -6,16 +6,26 @@
 		function draw(){
 			d3.select("body")
 				.selectAll("p")
-				.style("background-color","yellow");
+				.style("background-color",function(){return "yellow"});
+
+			d3.selectAll("p")
+				.data([2,4,6,8])
+				.style("font-size", function(d){ return d + "0px";});
 		}
 		</script>
 	</head>
 	<body>
 		<p>
-			pretty basic stuffs.
+			1 pretty basic stuffs.
 		</p>
 		<p>
-			only selecting paragrahps and put them in color.
+			2 only selecting paragrahps and put them in color.
+		</p>
+		<p>
+			3 nodes just for fun.
+		</p>
+		<p>
+			4 it is not nodes they are paragraphs.
 		</p>
 		<script type="text/javascript">
 			draw()
