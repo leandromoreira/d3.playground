@@ -1,6 +1,7 @@
 A place to play with D3js.
 
-To play it cool, you must ´git pull´ the project and serve root folder using a http server, for example you could use python.
+To play it cool, you must *git pull* the project and serve root folder using a http server, for example you could use python.
 
-´python -m SimpleHTTPServer 8080´
-´python -m http.server 8080´
+python -m SimpleHTTPServer 8080
+
+python -m http.server 8080
